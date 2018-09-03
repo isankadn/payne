@@ -1,0 +1,46 @@
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+
+
+$faded-hr-image-1: linear-gradient(180deg, rgba(200, 200, 200, 0) 0%, rgba(200, 200, 200, 1) 50%, rgba(200, 200, 200, 0)) !default;
+$white: #ffffff;
+$body-background-color: $white;
+$x-dark: #34383a;
+$blue: #0575b6;
+$light: #d2d0d0;
+$dark: #6b6969;
+$purple: #5B2D75;
+$course-section-background-color: #f7f7f7;
+$brand-color: $purple;
+$base: #9b9b9b;
+$success-base: #25b85a;
+$error-base: #b20610;
+$brand-font: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-family-sans-serif: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+$action-primary-fg: $brand-color;
+$action-primary-bg: lighten($brand-color, 10%);
+$action-primary-shadow: $brand-color !default;
+$link-color: $brand-color !default;
+
+$faded-hr-image-2: linear-gradient(180deg, rgba(200, 200, 200, 0) 0%, rgba(200, 200, 200, 1)) !default;
+$faded-hr-image-3: linear-gradient(180deg, rgba(200, 200, 200, 1) 0%, rgba(200, 200, 200, 0)) !default;
+$faded-hr-image-4: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 1) 50%, rgba(240, 240, 240, 0)) !default;
+$faded-hr-image-5: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0)) !default;
+$faded-hr-image-6: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0)) !default;
+
+$sans-serif: 'Open Sans', $verdana, sans-serif !default;
+$monospace: Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', monospace !default;
+$body-font-family: $sans-serif !default;
+$serif: $georgia !default;
+
+
+// system feedback-based colors
+$error-color: rgb(203, 7, 18) !default;
+$warning-color: rgb(255, 192, 31) !default;
+$confirm-color: rgb(0, 132, 1) !default;
+$active-color: $purple !default;
+$highlight-color: rgb(255, 255, 0) !default;
+$alert-color: rgb(212, 64, 64) !default;
+$success-color-hover: darken($success, 15%) !default;
+
+//@import "../bootstrap/bootstrap";
