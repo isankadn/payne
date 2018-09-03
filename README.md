@@ -1,1 +1,1 @@
-# Meeds. Hawthorn compatible Open edX theme
+# Payne. Hawthorn compatible Open edX theme
