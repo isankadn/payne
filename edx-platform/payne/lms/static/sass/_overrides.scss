@@ -13,8 +13,11 @@ body {
       max-width: 1200px;
     }
     .home-intro {
-      background: #efe7da;
-      margin: 20px 0;
+      
+      margin-top: 10px;
+      .home-banner-text{
+        background: #efe7da;
+      }
     }
     .container-footer {
       max-width: 1200px;
@@ -304,7 +307,7 @@ a {
     background: url("../images/hero-home-page.jpg") no-repeat top center !important;
     background-size: cover !important;
     height: 408px;
-    margin-left: 0;
+    margin: 0;
     .banner-text-wrap {
       width: 60%;
       margin-top: 170px;
@@ -1673,7 +1676,7 @@ header.header-main {
     img {
       margin-bottom: 0.5rem;
       width: auto;
-      height: 30px;
+      height: auto;
     }
   }
   .open-edx-logo {
@@ -1769,6 +1772,7 @@ header.header-main {
         .banner {
           height: 408px;
           width: 100%;
+          margin: 0;
 
 
         }
@@ -1801,7 +1805,7 @@ header.header-main {
     //background-image: url("../images/footer-bg.jpg");
     background-position: left bottom;
     background-repeat: no-repeat;
-    margin-top: 20px;
+    margin-top: 10px;
     .footer-menu{
       padding: 20px 0;
     }
@@ -1881,7 +1885,7 @@ header.header-main {
     }
   }
   .footer-main {
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #efe7da;
     //background-image: url("../images/footer-bg.jpg");
     background-position: left bottom;
@@ -1892,7 +1896,7 @@ header.header-main {
     ul {
       margin-left: 0;
       img {
-        height: 30px;
+        height: auto;
       }
       li {
         color: #38365f;
@@ -2046,7 +2050,7 @@ header.header-main {
 
 @media screen and (min-width: 80em) {
   .footer-main {
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #efe7da;
     //background-image: url("../images/footer-bg.jpg");
     background-position: left bottom;
@@ -2091,8 +2095,8 @@ header.header-main {
              }
            }
          .home-intro {
-           background: #efe7da;
-           margin: 20px 0;
+           
+           margin-top: 10px;
          }
          a:not(.btn), a:visited:not(.btn) {
            color: $brand-color;
@@ -2369,7 +2373,7 @@ header.header-main {
         background-size: cover !important;
         height: 408px;
         width: 100%;
-        margin-left: 0;
+        margin: 0;
         .banner-text-wrap {
           width: 60%;
           margin-top: 170px;
@@ -3741,7 +3745,7 @@ header.header-main {
         img {
           margin-bottom: 0.5rem;
           width: auto;
-          height: 30px;
+          height: auto;
         }
       }
       .open-edx-logo {
@@ -3834,6 +3838,7 @@ header.header-main {
           .grid-manual {
             .banner {
               height: 408px;
+              margin: 0;
 
             }
             .text-tint {
@@ -3956,7 +3961,7 @@ header.header-main {
         ul {
           margin-left: 0;
           img {
-            height: 30px;
+            height: auto;
           }
           li {
             color: #38365f;
@@ -4154,6 +4159,7 @@ header.header-main {
         .tint-dark {
           .banner {
             height: 150px;
+            margin: 0;
           }
           .banner-text1 {
             margin-top: 50px !important;
@@ -4249,6 +4255,7 @@ header.header-main {
     .tint-dark {
       .banner {
         height: 150px;
+        margin: 0;
       }
       .banner-text1 {
         margin-top: 50px !important;
