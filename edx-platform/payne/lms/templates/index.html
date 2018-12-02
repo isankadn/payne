@@ -8,6 +8,7 @@
     from django.core.urlresolvers import reverse
 %>
 
+
 <%block name="headextra">
     <link rel="stylesheet" type="text/css" href="${static.url('css/slick.css')}"/>
     <link rel="stylesheet" type="text/css" href="${static.url('css/owl.carousel.min.css')}"/>
@@ -59,123 +60,136 @@
         </div>
     </header>
 
-    <!--<section class="partners-section">-->
-        <!--<div class="partners-container">-->
-            <!--<section class="partners-section">-->
-                <!--<div class="partners-title">-->
-                    <!--<h3>-->
-                        <!--<span class="partners-title&#45;&#45;big">Our Partners</span>-->
-                    <!--</h3>-->
-                <!--</div>-->
-                <!--<div class="partners">-->
-                    <!--<div class="owl-carousel">-->
+ 
 
-                        <!--<div class="owl-item" style="width: 216px;">-->
-                            <!--<li>-->
-                                <!--<a href="https://cmb.ac.lk/" target="_blank">-->
-                                    <!--<img src="${static.url('images/uoc.jpg')}"-->
-                                         <!--alt=" University of Colombo, Sri Lanka">-->
-                                <!--</a>-->
-                            <!--</li>-->
-                        <!--</div>-->
-                        <!--<div class="owl-item" style="width: 216px;">-->
-                            <!--<li>-->
-                                <!--<a href="#" target="_blank">-->
-                                    <!--<img src="${static.url('images/gp-small.jpg')}"-->
-                                         <!--alt=" GP Tutor">-->
-                                <!--</a>-->
-                            <!--</li>-->
-                        <!--</div>-->
-                        <!--<div class="owl-item" style="width: 216px;">-->
-                            <!--<li>-->
-                                <!--<a href="#" target="_blank">-->
-                                    <!--<img src="${static.url('images/sg-info.jpg')}"-->
-                                         <!--alt="Infomatics Academy">-->
-                                <!--</a>-->
-                            <!--</li>-->
-                        <!--</div>-->
-                        <!--<div class="owl-item" style="width: 216px;">-->
-                            <!--<li>-->
-                                <!--<a href="#" target="_blank">-->
-                                    <!--<img src="${static.url('images/academia.jpg')}"-->
-                                         <!--alt=" Academia">-->
-                                <!--</a>-->
-                            <!--</li>-->
-                        <!--</div>-->
 
-                    <!--</div>-->
-
-                <!--</div>-->
-                <!--<script type="text/javascript">-->
-
-                    <!--$(document).ready(function () {-->
-                        <!--$(".owl-carousel").owlCarousel({-->
-                            <!--autoPlay: 3000,-->
-                            <!--loop: true,-->
-
-                            <!--items: 4,-->
-                            <!--itemsDesktop: [1199, 4],-->
-                            <!--itemsDesktopSmall: [979, 4],-->
-                            <!--itemsTablet: [768, 3],-->
-                            <!--itemsMobile: [479, 2],-->
-                            <!--navigation: true,-->
-                            <!--navigationText: false,-->
-                            <!--pagination: false,-->
-                            <!--autoWidth:false,-->
-
-                        <!--});-->
-                    <!--});-->
-                <!--</script>-->
-            <!--</section>-->
-        <!--</div>-->
-    <!--</section>-->
     <section class="home-intro">
     <div class="grid-container grid-manual home-banner-text">
         <div class="row">
+            <div class="col-lg-4"><iframe src="https://www.youtube.com/embed/jEo-ykjmHgg?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer;   encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="100%" height="100%" style="
+    min-height: 262px;
+    padding: 15px 0;
+"></iframe></div>
+<div class="col-lg-8">
             <div class="home-text-one col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
                 <h2>To be recognized as a global leader in distance theological education.</h2>
             </div>
             <div class="home-text-one col-3 sm-col-3 md-col-3 lg-col-3 xl-col-3"></div>
-            <div class="home-text-one col-6 sm-col-6 md-col-6 lg-col-6 xl-col-6">
+            <div class="home-text-one col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
                 <p>To prepare leaders for ministry in the African-American tradition of liberation, reconciliation, social justice, and the dignity of all humankind.</p>
             </div>
             <div class="home-text-two col-3 sm-col-3 md-col-3 lg-col-3 xl-col-3"></div>
         </div>
+         </div>
     </div>
     </section>
     <div class="fcourse-list">
             <%include file="${courses_list}" />
     </div>
-    ##     <section class="about-section">
-    ##         <div class="about-container"></div>
-    ##     </section>
-    ##     <section class="advisory-section">
-    ##         <div class="advisory-container"></div>
-    ##     </section>
+         <!-- <section class="about-section">
+             <div class="about-container"></div>
+        </section>
+         <section class="advisory-section">
+             <div class="advisory-container"></div>
+         </section> -->
 
+<!-- % if show_homepage_promo_video: -->
+    <section id="video-modal" class="modal modal-custom custom-video-modal">
+        <div class="inner-wrapper">
+            <iframe title="YouTube Video" width="640" height="360"
+                    src="//www.youtube.com/embed/${'FYU-N2RWfso'}?showinfo=0" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+    </section>
+<!-- % endif -->
+
+<!-- start of slider -->
+
+<section class="partners-section">
+       <div class="partners-container">
+           <section class="partners-section">
+              
+               <div class="partners">
+                   <div class="owl-carousel">
+
+                       <div class="owl-item" style="width: 350px;">
+                           <li class="border">
+                               <a href="" target="_blank">
+                                   <img src="https://www.instituteofphotography.in/wp-content/uploads/2015/05/dummy-profile-pic-300x300.jpg" alt="  ">
+                                   <h2>Prof. Lorem Ipsum </h2>
+                               </a>
+                           </li>
+                       </div>
+                       <div class="owl-item" style="width: 350px;">
+                           <li class="border">
+                               <a href="#" target="_blank">
+                                   <img src="https://www.instituteofphotography.in/wp-content/uploads/2015/05/dummy-profile-pic-300x300.jpg" alt="  ">
+                                   <h2>Prof. Lorem Ipsum </h2>
+                               </a>
+                           </li>
+                       </div>
+                       <div class="owl-item" style="width: 350px;">
+                           <li class="border">
+                               <a href="#" target="_blank">
+                                   <img src="https://www.instituteofphotography.in/wp-content/uploads/2015/05/dummy-profile-pic-300x300.jpg" alt=" ">
+                                   <h2>Prof. Lorem Ipsum </h2>
+                               </a>
+                           </li>
+                       </div>
+                       <div class="owl-item" style="width: 350px;">
+                           <li class="border">
+                               <a href="#" target="_blank">
+                                   <img src="https://www.instituteofphotography.in/wp-content/uploads/2015/05/dummy-profile-pic-300x300.jpg" alt=" ">
+                                   <h2>Prof. Lorem Ipsum </h2>
+                               </a>
+                           </li>
+                       </div>
+
+                   </div>
+
+               </div>
+               <script type="text/javascript">
+
+                   $(document).ready(function () {
+                       $(".owl-carousel").owlCarousel({
+                           autoPlay: 3000,
+                           loop: true,
+
+                           items: 2,
+                           itemsDesktop: [1199, 2],
+                           itemsDesktopSmall: [979, 2],
+                           itemsTablet: [768, 2],
+                           itemsMobile: [479, 1],
+                           navigation: true,
+                           navigationText: false,
+                           pagination: false,
+                           autoWidth:false,
+
+                       });
+                   });
+               </script>
+           </section>
+       </div>
+   </section>
+
+
+<!-- end of slider -->
+<!-- 
     <section class="bottom-banner-section">
         <div class="grid-manual bottom-banner-container">
             <div class="bottom-banner-text">
                 <div class="bottom-learn">
-                    <!--<h2>READY TO LEARN?</h2>-->
+                   <h2>READY TO LEARN?</h2>
                 </div>
                 <div class="bottom-register">
-                    <!--<a class="btn btn-primary" href="/register${login_query()}">REGISTER NOW</a>-->
+                    <a class="btn btn-primary" href="/register${login_query()}">REGISTER NOW</a>
                 </div>
             </div>
         </div>
     </section>
 </section>
+ -->
 
-% if show_homepage_promo_video:
-    <section id="video-modal" class="modal modal-custom custom-video-modal">
-        <div class="inner-wrapper">
-            <iframe title="YouTube Video" width="640" height="360"
-                    src="//www.youtube.com/embed/${homepage_promo_video_youtube_id}?showinfo=0" frameborder="0"
-                    allowfullscreen></iframe>
-        </div>
-    </section>
-% endif
 
 % if show_signup_immediately is not UNDEFINED:
 ## NOTE: This won't work in production, because anonymous views are cached, so it will
