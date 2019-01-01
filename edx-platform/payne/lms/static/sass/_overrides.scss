@@ -43,7 +43,6 @@
       .container {
         padding: 0;
       }
-
       .login {
         .login-button {
           box-shadow: 0 2px 1px 0 $brand-color;
@@ -233,6 +232,7 @@
       }
       .home-text-one {
         text-align: center;
+        padding-top: 10px;
         h2 {
           text-align: center;
           font-weight: bold;
@@ -319,7 +319,7 @@
       height: 408px;
       margin: 0;
       .banner_logo {
-        text-align: center;
+        text-align: center;      
         margin: auto;
       }
       
@@ -340,9 +340,8 @@
       line-height: normal;
        
         }
-        .sub-head {
-            
-                position: relative;
+        .sub-head {      
+      position: relative;
       padding-top: .4rem;
       padding-bottom: .4rem;
       text-transform: uppercase;
@@ -2377,6 +2376,7 @@
            }
            .home-text-one {
              text-align: center;
+             padding-top: 10px;
              h2 {
                text-align: center;
                font-weight: bold;
