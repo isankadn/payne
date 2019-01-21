@@ -4,11 +4,14 @@
 <%
 course_mode_class = course_mode if course_mode else ''
 %>
-<style>
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+<style>
+
+
     .document_title {
         width: 10rem;
         margin: auto;
+        height: 7.5rem;
     }
     .accomplishment-type{
         margin-bottom: 1.5rem !important;
@@ -140,12 +143,12 @@ course_mode_class = course_mode if course_mode else ''
             <span class="deco-corner deco-corner-br"></span>
 
             <div class="accomplishment-type">
-                <span class="accomplishment-type-symbol">
+                <!-- <span class="accomplishment-type-symbol">
                     <img class="src" src="/static/certificates/images/ico-${course_mode_class}.png" alt="Image for course mode of type ${course_mode_class}">
-                </span>
+                </span> -->
                 <!-- <span class="accomplishment-type-label hd-3">${document_title}</span> -->
                 <div class="document_title">
-                            <img class="document_title_img" src="/static/payne/certificates/images/title.svg" alt="${platform_name}">                          
+                           <!--  <img class="document_title_img" src="/static/payne/certificates/images/title.svg" alt="${platform_name}">        -->                   
                 </div>
             </div>
             <span class="sr-only">End of title</span>
@@ -194,8 +197,8 @@ course_mode_class = course_mode if course_mode else ''
                     <div class="accomplishment-org">
                                            
                             <div class="organization organization-edX">
-                               <!--  <img class="organization-logo" src="${logo_src}" alt="${platform_name}"> -->
-                                <img class="organization-logo" src="/static/payne/certificates/images/logo.svg" alt="${platform_name}">
+                                <!-- <img class="organization-logo" src="${logo_src}" alt="${platform_name}">
+                                <img class="organization-logo" src="/static/payne/certificates/images/logo.svg" alt="${platform_name}"> -->
                             </div>                      
                     
                     </div>

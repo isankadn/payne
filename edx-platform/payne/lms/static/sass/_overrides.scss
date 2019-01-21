@@ -1756,15 +1756,22 @@
     .footer-logo {
       text-align: center;
       img {
+        max-height: 30px;
         margin-bottom: 0.5rem;
         width: auto;
         height: auto;
+      }
+      .social {
+        img {
+          max-height: 20px;
+        }
       }
     }
     .open-edx-logo {
       ul {
         li {
           text-align: left;
+          font-size: 0.7rem;
           img {
             max-width: 80%;
           }
@@ -1993,7 +2000,8 @@
       .open-edx-logo {
         ul {
           li {
-            text-align: right;
+            text-align: left;
+            font-size: 0.7rem;
             img {
               max-width: 80%;
             }
@@ -3827,15 +3835,22 @@
         .footer-logo {
           text-align: center;
           img {
+            max-height: 30px;
             margin-bottom: 0.5rem;
             width: auto;
             height: auto;
           }
+          .social {
+          img {
+            max-height: 20px;
+          }
+      }
         }
         .open-edx-logo {
           ul {
             li {
               text-align: left;
+              font-size: 0.7rem;
               img {
                 max-width: 80%;
               }
@@ -4060,7 +4075,8 @@
           .open-edx-logo {
             ul {
               li {
-                text-align: right;
+                text-align: left;
+                font-size: 0.7rem;
                 img {
                   max-width: 80%;
                 }
