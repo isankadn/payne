@@ -6,7 +6,33 @@ course_mode_class = course_mode if course_mode else ''
 %>
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
 <style>
+    @page {
+    size : landscape !important;
+    }
 
+    @media print {
+        body {
+         margin: 0.9rem .625rem auto!important;
+         padding:0;
+         height:auto
+         }
+        .wrapper-view {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        }
+        .wrapper-accomplishment-rendering{
+        padding:0!important
+        }
+         [class^=wrapper]::after{
+        display:none
+        }
+    }
+    @media print and (color) {
+    * {
+      -webkit-print-color-adjust: exact !important;
+      color-adjust: exact !important;
+     }
+    }
 
     .document_title {
         width: 10rem;
@@ -21,7 +47,7 @@ course_mode_class = course_mode if course_mode else ''
             font-weight: 100 !important;
     }
     .accomplishment-course{
-        text-decoration: underline !important;
+        text-decoration: none !important;
     }
     .certificate_bottom{
         display: inline-flex;
